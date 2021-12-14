@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-  <h1>Contact</h1>
+  <h1>Contact to abhi</h1>
 
   <form name="Contact Form" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="Contact Form" />
