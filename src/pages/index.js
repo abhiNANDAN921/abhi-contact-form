@@ -7,25 +7,21 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
-  </Layout>
+  <h1>Contact</h1>
+
+  <form name="Contact Form" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="Contact Form" />
+    <div>
+      <label>Your Email:</label>
+      <input type="email" name="email" />
+    </div>
+    <div>
+      <label>Message:</label>
+      <textarea name="message" />
+    </div>
+    <button type="submit">Send</button>
+  </form>
+</Layout>
 )
 
 export default IndexPage
